@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Web — Women Fashion Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <span>SHOP WITH<strong>HEART</strong></span>
+      </div>
+      <button class="hamburger" aria-label="Open Menu" onclick="toggleMenu()">☰</button>
+      <nav id="menu">
+        <a href="#hero">Home</a>
+        <a href="#why">Why Us</a>
+        <a href="#categories">Categories</a>
+        <a href="#offers">Offers</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn small primary" href="#categories">Shop Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero container">
+    <div class="hero-text">
+      <div class="chipline">
+        <span class="chip">New Arrivals</span>
+        <span class="chip">Free Shipping ₹999+</span>
+        <span class="chip">Easy Returns</span>
+      </div>
+      <h1>Trendy Women’s Fashion for Every Mood</h1>
+      <p>Discover curated <strong>dresses</strong>, <strong>bags</strong>, <strong>footwear</strong>, and <strong>jewellery</strong> crafted to elevate your everyday style.</p>
+      <div class="cta">
+        <a class="btn primary" href="#categories">Explore Categories</a>
+        <a class="btn ghost" href="#offers">View Offers</a>
+      </div>
+      <div class="badges">
+        <span class="badge">✔ Premium Quality</span>
+        <span class="badge">✔ 24/7 Support</span>
+        <span class="badge">✔ Secure Payments</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="images/generated-image.png" alt="Fashion collage" class="card-img"/>
+      <div class="floating-card">
+        <p class="fc-title">Today’s Picks</p>
+        <ul>
+          <li>✨ Floral Midi Dress</li>
+          <li>👜 Classic Tote Bag</li>
+          <li>👡 Nude Block Heels</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why" class="why container">
+    <h2>Why Shop With Us?</h2>
+    <p class="lead">We blend quality, comfort, and design so you can look stunning without compromise.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🚚</div>
+        <h3>Fast & Free Shipping</h3>
+        <p>Pan-India delivery with free shipping on orders above ₹999.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💳</div>
+        <h3>Secure Checkout</h3>
+        <p>Safe payments via UPI, cards, and net banking with fraud protection.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔁</div>
+        <h3>Easy Returns</h3>
+        <p>7-day return window. Exchange sizes or get quick refunds.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES (Alternating layout like reference) -->
+  <section id="categories" class="categories container">
+    <h2>Shop by Category</h2>
+
+    <article class="category">
+      <div class="cat-image">
+        <img src="images/dress2.png" alt="Dresses" class="card-img" />
+      </div>
+      <div class="cat-content">
+        <h3>Dresses</h3>
+        <p>From breezy midis to party-ready bodycons—find a dress for every occasion.</p>
+        <div class="pillbar">
+          <span class="pill">Floral</span><span class="pill">Casual</span><span class="pill">Party</span>
+        </div>
+        <a class="btn primary" href="#">Shop Dresses</a>
+      </div>
+    </article>
+
+    <article class="category flip">
+      <div class="cat-image">
+        <img src="images/footwear 2.png" alt="Footwear" class="card-img" />
+      </div>
+      <div class="cat-content">
+        <h3>Footwear</h3>
+        <p>Heels, flats, and sneakers that marry comfort with style.</p>
+        <div class="pillbar">
+          <span class="pill">Heels</span><span class="pill">Flats</span><span class="pill">Sneakers</span>
+        </div>
+        <a class="btn primary" href="#">Shop Footwear</a>
+      </div>
+    </article>
+
+    <article class="category">
+      <div class="cat-image">
+        <img src="images/bags2.png" alt="Bags" class="card-img" />
+      </div>
+      <div class="cat-content">
+        <h3>Bags</h3>
+        <p>Crossbody, totes, and clutches—carry your world in style.</p>
+        <div class="pillbar">
+          <span class="pill">Totes</span><span class="pill">Crossbody</span><span class="pill">Clutches</span>
+        </div>
+        <a class="btn primary" href="#">Shop Bags</a>
+      </div>
+    </article>
+
+    <article class="category flip">
+      <div class="cat-image">
+        <img src="images/jewellery2.jpg.png" alt="Jewellery" class="card-img" />
+      </div>
+      <div class="cat-content">
+        <h3>Jewellery</h3>
+        <p>Minimal to statement pieces—finish your look with a sparkle.</p>
+        <div class="pillbar">
+          <span class="pill">Necklaces</span><span class="pill">Earrings</span><span class="pill">Bracelets</span>
+        </div>
+        <a class="btn primary" href="#">Shop Jewellery</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- FEATURED PRODUCTS GRID -->
+  <section class="featured container">
+    <h2>Featured Picks</h2>
+    <div class="grid4">
+      <div class="prod card">
+        <img src="images/image1.png" alt="Floral dress" class="card-img"/>
+        <div class="prod-info">
+          <h4>Floral Midi Dress</h4>
+          <p>₹1,899</p>
+          <button class="btn small">Add to Cart</button>
+        </div>
+      </div>
+      <div class="prod card">
+        <img src="images/image2.png" alt="Nude heels" class="card-img"/>
+        <div class="prod-info">
+          <h4>Nude Block Heels</h4>
+          <p>₹1,299</p>
+          <button class="btn small">Add to Cart</button>
+        </div>
+      </div>
+      <div class="prod card">
+        <img src="images/image3.png" alt="Tote bag" class="card-img"/>
+        <div class="prod-info">
+          <h4>Classic Tote Bag</h4>
+          <p>₹1,499</p>
+          <button class="btn small">Add to Cart</button>
+        </div>
+      </div>
+      <div class="prod card">
+        <img src="images/image4.png" alt="Gold necklace" class="card-img"/>
+        <div class="prod-info">
+          <h4>Gold Plated Necklace</h4>
+          <p>₹999</p>
+          <button class="btn small">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS / PRICING STYLE -->
+  <section id="offers" class="offers container">
+    <h2>Season Specials</h2>
+    <div class="plans">
+      <div class="plan card">
+        <h3>Starter</h3>
+        <p class="price">Flat 10% OFF</p>
+        <ul>
+          <li>On first order</li>
+          <li>Free shipping 999+</li>
+          <li>Easy returns</li>
+        </ul>
+        <a href="#categories" class="btn">Get Offer</a>
+      </div>
+      <div class="plan card highlight">
+        <h3>Premium</h3>
+        <p class="price">Save ₹300</p>
+        <ul>
+          <li>Dress + Heels Combo</li>
+          <li>Priority shipping</li>
+          <li>Free gift wrap</li>
+        </ul>
+        <a href="#categories" class="btn primary">Buy Bundle</a>
+      </div>
+      <div class="plan card">
+        <h3>Family</h3>
+        <p class="price">15% OFF</p>
+        <ul>
+          <li>On 3+ items</li>
+          <li>Free returns</li>
+          <li>VIP support</li>
+        </ul>
+        <a href="#categories" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container">
+    <h2>What Shoppers Say</h2>
+    <div class="cards">
+      <blockquote class="card">“Amazing quality and super fast delivery. The heels are so comfortable!”<cite> — Riya</cite></blockquote>
+      <blockquote class="card">“Love the designs. The tote bag fits everything and still looks chic.”<cite> — Aisha</cite></blockquote>
+      <blockquote class="card">“Jewellery is elegant and budget-friendly. Totally worth it!”<cite> — Neha</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq container">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How long does shipping take?</summary>
+      <p>2–5 business days depending on location. You’ll get live tracking updates.</p>
+    </details>
+    <details>
+      <summary>What is your return policy?</summary>
+      <p>Returns accepted within 7 days in original condition. Easy doorstep pickup in most cities.</p>
+    </details>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container band">
+      <div>
+        <h3>Upgrade Your Wardrobe Today</h3>
+        <p>Trendy collections drop every week. Don’t miss out!</p>
+      </div>
+      <a class="btn primary" href="#categories">Start Shopping</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container foot">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <span>Shopping <strong>Web</strong></span>
+      </div>
+      <div class="links">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">X</a>
+      </div>
+      <p class="muted">© 2025 Shopping Web — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
